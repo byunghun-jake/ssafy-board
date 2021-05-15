@@ -5,7 +5,7 @@
       <img class="h-80" src="@/assets/logo.png" alt="" />
       <span class="text-6xl font-bold">감사합니다❤</span>
     </div>
-    <ul class="grid grid-cols-4 gap-6">
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <TheArticle
         v-for="article in articles"
         :key="article.createdAt"

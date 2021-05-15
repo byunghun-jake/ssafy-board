@@ -10,8 +10,10 @@
         type="text"
         v-model="formData.content"
       />
-      <div class="flex items-center justify-between w-full px-4">
-        <div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-between w-full px-4"
+      >
+        <div class="mb-2 md:mb-0">
           <input
             v-model="isAnonymous"
             type="checkbox"

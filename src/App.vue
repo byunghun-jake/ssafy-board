@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <TheHeader />
-    <div id="nav" class="w-full flex justify-center p-6">
-      <router-link :to="{ name: 'Home' }" class="py-2 px-4 text-lg">
+    <div id="nav" class="w-full flex flex-col md:flex-row justify-center p-6">
+      <router-link :to="{ name: 'Home' }" class="py-2 px-4 text-lg text-center">
         여기서 보시면 됩니다!
       </router-link>
-      <router-link :to="{ name: 'Form' }" class="py-2 px-4 text-lg">
+      <router-link :to="{ name: 'Form' }" class="py-2 px-4 text-lg text-center">
         여기서 쓰시면 됩니다!
       </router-link>
     </div>
