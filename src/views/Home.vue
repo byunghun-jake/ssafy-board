@@ -1,7 +1,9 @@
 <template>
-  <div class="container mx-auto my-10">
-    <div class="my-4">
-      <img class="mx-auto h-80" src="@/assets/logo.png" alt="" />
+  <div class="container mx-auto my-10 px-6">
+    <div class="img-container my-4 flex items-center justify-center">
+      <span class="text-6xl font-bold">교수님</span>
+      <img class="h-80" src="@/assets/logo.png" alt="" />
+      <span class="text-6xl font-bold">감사합니다❤</span>
     </div>
     <ul class="grid grid-cols-4 gap-6">
       <TheArticle
@@ -48,3 +50,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.img-container {
+  font-family: "Poor Story", cursive;
+  letter-spacing: 0.2em;
+}
+</style>
