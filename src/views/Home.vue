@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto my-10">
-    <div>
+    <div class="my-4">
       <img class="mx-auto h-80" src="@/assets/logo.png" alt="" />
     </div>
     <ul class="grid grid-cols-4 gap-6">
@@ -11,7 +11,7 @@
       />
     </ul>
     <footer>
-      <div class="container mx-auto p-10">
+      <div class="container mx-auto p-10 flex justify-center">
         <span class="text-2xl font-bold">지금 우시면 됩니다!</span>
       </div>
     </footer>

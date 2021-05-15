@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-20">
+  <div class="container mx-auto mt-20 px-10">
     <div class="grid gap-6 justify-items-center">
       <h1 class="text-2xl font-bold">
         ✨감사의 마음을 담아 내용을 작성해주세요🎉
