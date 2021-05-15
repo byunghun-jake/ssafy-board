@@ -1,5 +1,8 @@
 <template>
   <div class="container mx-auto my-10">
+    <div>
+      <img class="mx-auto h-80" src="@/assets/logo.png" alt="" />
+    </div>
     <ul class="grid grid-cols-4 gap-6">
       <TheArticle
         v-for="article in articles"
