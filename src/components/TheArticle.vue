@@ -1,8 +1,8 @@
 <template>
   <div>
     <div
-      class="border grid gap-4 p-6 rounded-lg"
-      :class="{ 'border-gray-600': true }"
+      class="border grid gap-4 p-6 rounded-lg select-none hover:shadow-lg transition-shadow"
+      :class="[borderColor]"
     >
       <p class="break-all">{{ article.content }}</p>
       <p class="text-lg font-semibold justify-self-end">{{ article.name }}</p>
@@ -11,9 +11,21 @@
 </template>
 
 <script>
-// import _ from "lodash"
+import _ from "lodash"
 
-// const COLOR_LIST = ["red", "blue", "purple", "yellow"]
+const COLOR_LIST = [
+  "gray",
+  "red",
+  "blue",
+  "yellow",
+  "orange",
+  "lime",
+  "green",
+  "purple",
+  "teal",
+  "indigo",
+  "violet",
+]
 
 export default {
   name: "TheArticle",
@@ -23,8 +35,8 @@ export default {
     },
   },
   computed: {
-    borderStyle() {
-      return {}
+    borderColor() {
+      return `border-${_.sample(COLOR_LIST)}-600`
     },
   },
 }
